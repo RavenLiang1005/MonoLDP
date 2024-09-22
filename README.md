@@ -8,7 +8,7 @@ MonoLDP is a two-stage network consists of a depth prediction module and a relat
 ### Preparation
 1. Installation
 create conda environment
-'''
+```
 conda conda create -n monoldp_depth python=3.8
 conda install pytorch=1.7.0 torchvision=0.8.0  cudatoolkit=11.0 -c pytorch
-'''
+```
