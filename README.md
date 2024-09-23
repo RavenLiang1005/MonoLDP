@@ -21,4 +21,8 @@ pip install -r requirements.txt
 3. Dataset
 We have the processed NYU v2 dataset [here](https://drive.google.com/file/d/1AXUq0zHJQsWQ13DRSCUEiuAzeljOgefn/view?usp=drive_link), or you can download the original sampled [dataset](https://drive.google.com/file/d/1WoOZOBpOWfmwe7bknWS5PMUCLBPFKTOw/view) here and run code
 
- 
+```
+python python preprocess/extract_superpixel.py --data_path
+python preprocess/extract_lineseg.py --data_path
+```
+Just notice that line segmentation only requires the installation of any version of opencv-python lower than 3.4.6, so you may have to reinstall the opencv.
