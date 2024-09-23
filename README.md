@@ -60,6 +60,7 @@ python inference_single_image.py --image_path $IMAGE_PATH --load_weights_folder 
 | MonoIndoor++ (2021) | ✗             |      0.133 |   0.551 |  0.830 |  0.964 |  0.991 |
 | IndoorDepth (2023)  | ✗             |      0.126 |   0.494 |  0.845 |  0.965 |  0.991 |
 | Ours                | ✗             |      0.122 |   0.381 |  0.859 |  0.970 |  0.994 |
+
 The pretrained model is provide here. And to test you can run this command:
 ```
 python evaluate_nyu_depth.py --data_path your data path --load_weights_folder your model
