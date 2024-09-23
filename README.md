@@ -45,4 +45,25 @@ python inference_single_image.py --image_path $IMAGE_PATH --load_weights_folder 
 ```
 
 ### Evaluation
-For evaluation, 
+| Methods             | Supervision   |   AbsRel ↓ |   RMS ↓ |   δ₁ ↑ |   δ₂ ↑ |   δ₃ ↑ |
+|:--------------------|:--------------|-----------:|--------:|-------:|-------:|-------:|
+| Eigen et al. (2014) | ✓             |      0.158 |   0.641 |  0.769 |  0.95  |  0.988 |
+| DORN (2018)         | ✓             |      0.115 |   0.509 |  0.828 |  0.965 |  0.992 |
+| NewCRFs (2022)      | ✓             |      0.095 |   0.334 |  0.922 |  0.992 |  0.998 |
+| DistDepth (2022)    | Δ             |      0.130 |   0.517 |  0.832 |  0.963 |  0.990 |
+| SC-Depthv3 (2023)   | Δ             |      0.123 |   0.486 |  0.848 |  0.963 |  0.991 |
+| GasMono (2023)      | Δ             |      0.113 |   0.459 |  0.871 |  0.973 |  0.992 |
+| Monodepth2 (2019)   | ✗             |      0.161 |   0.600 |  0.771 |  0.948 |  0.987 |
+| P²Net (2021)        | ✗             |      0.150 |   0.561 |  0.796 |  0.948 |  0.986 |
+| PLNet (2021)        | ✗             |      0.144 |   0.540 |  0.807 |  0.957 |  0.990 |
+| MonoIndoor (2021)   | ✗             |      0.142 |   0.581 |  0.802 |  0.952 |  0.990 |
+| MonoIndoor++ (2021) | ✗             |      0.133 |   0.551 |  0.830 |  0.964 |  0.991 |
+| IndoorDepth (2023)  | ✗             |      0.126 |   0.494 |  0.845 |  0.965 |  0.991 |
+| Ours                | ✗             |      0.122 |   0.381 |  0.859 |  0.970 |  0.994 |
+The pretrained model is provide here. And to test you can run this command:
+```
+python evaluate_nyu_depth.py --data_path your data path --load_weights_folder your model
+```
+
+### Acknowledgements
+The project borrows codes from Monodepth2, P^2Net, PLNet and IndoorDepth. Many thanks to their authors.
