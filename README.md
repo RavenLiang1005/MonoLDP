@@ -34,4 +34,15 @@ python preprocess/extract_lineseg.py --data_path nyu_data/
 Just notice that line segmentation only requires the installation of any version of opencv-python lower than 3.4.6, so you may have to reinstall the opencv.
 
 ### Training
+You can modify the default settings in the options.py. For training just run
+```
+python train.py --data_path nyu_data/
+```
+### Single image prediction
+The network predicts single RGB image by 
+```
+python inference_single_image.py --image_path $IMAGE_PATH --load_weights_folder $MODEL_PATH
+```
 
+### Evaluation
+For evaluation, 
