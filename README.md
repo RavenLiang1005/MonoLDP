@@ -19,4 +19,6 @@ cd MonoLDP/Depth_Estimation
 pip install -r requirements.txt
 ```
 3. Dataset
-We have the processed dataset here 
+We have the processed NYU v2 dataset here (https://drive.google.com/file/d/1AXUq0zHJQsWQ13DRSCUEiuAzeljOgefn/view?usp=drive_link), or you can download the original sampled dataset (https://drive.google.com/file/d/1WoOZOBpOWfmwe7bknWS5PMUCLBPFKTOw/view) here and run code
+
+ 
