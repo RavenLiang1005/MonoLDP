@@ -67,4 +67,4 @@ python evaluate_nyu_depth.py --data_path your data path --load_weights_folder yo
 ```
 
 ### Acknowledgements
-The project borrows codes from Monodepth2, P^2Net, PLNet and IndoorDepth. Many thanks to their authors.
+The project borrows codes from [Monodepth2](https://github.com/nianticlabs/monodepth2), [P^2Net](https://github.com/svip-lab/Indoor-SfMLearner), [PLNet](https://github.com/HalleyJiang/PLNet/tree/main) and [IndoorDepth](https://github.com/fcntes/IndoorDepth/tree/main). Many thanks to their authors.
